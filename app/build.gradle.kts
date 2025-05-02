@@ -1,10 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace = "com.example.eventhub"
     compileSdk = 35
+
 
     defaultConfig {
         applicationId = "com.example.eventhub"
@@ -25,12 +27,20 @@ android {
             )
         }
     }
+
+    buildFeatures {
+        viewBinding= true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
 dependencies {
+    implementation(libs.firebase.auth)
+    implementation(libs.credentials)
+    implementation(libs.credentials.play.services.auth)
+    implementation(libs.googleid)
     val mdcVersion = "1.0.0"
 
     implementation(libs.appcompat)
