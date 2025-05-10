@@ -37,11 +37,16 @@ android {
     }
 }
 dependencies {
-    implementation(libs.firebase.auth)
     implementation(libs.credentials)
     implementation(libs.credentials.play.services.auth)
     implementation(libs.googleid)
-    implementation(libs.firebase.database)
+
+    implementation("com.google.firebase:firebase-auth:22.3.0")
+    implementation("com.google.firebase:firebase-database:20.3.0")
+    implementation("com.google.firebase:firebase-firestore:24.10.0")
+    implementation("com.google.firebase:firebase-storage:20.3.0")
+    implementation("com.cloudinary:cloudinary-android:2.4.0")
+
     val mdcVersion = "1.0.0"
 
     implementation(libs.appcompat)

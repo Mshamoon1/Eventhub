@@ -16,14 +16,14 @@ import com.example.eventhub.R;
 import com.example.eventhub.model.EventModel;
 
 import java.text.DateFormatSymbols;
-import java.util.ArrayList;
+import java.util.List;
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
 
     private Context context;
-    private ArrayList<EventModel> eventList;
+    private List<EventModel> eventList;
 
-    public EventAdapter(Context context, ArrayList<EventModel> eventList) {
+    public EventAdapter(Context context, List<EventModel> eventList) {
         this.context = context;
         this.eventList = eventList;
     }
@@ -56,7 +56,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
 
         // Load image with Glide
         Glide.with(context)
-                .load(Uri.parse(event.getImageUri()))
+                .load(Uri.parse(event.getImageUrl()))
                 .placeholder(R.drawable.dj_image)
                 .into(holder.cardImage);
     }

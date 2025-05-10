@@ -13,8 +13,6 @@ public class LoginActivity extends BaseActivity {
     private ActivityLogBinding binding;
     private FirebaseAuth firebaseAuth;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +46,14 @@ public class LoginActivity extends BaseActivity {
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             Toast.makeText(this, "Enter a valid email", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Check for admin credentials
+        if (email.equals("admin@eventhub.com") && password.equals("admin@123")) {
+            Toast.makeText(LoginActivity.this, "You logged in as admin, add event", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(LoginActivity.this, AdminEventActivity.class));
+            finish();
             return;
         }
 
