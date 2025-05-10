@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -29,7 +30,7 @@ public class AdminEventActivity extends AppCompatActivity {
 
     private ImageView imagePreview;
     private EditText etTitle, etDate, etLocation, etCount;
-    private Button btnSelectImage, btnAddEvent;
+    private Button btnSelectImage, btnAddEvent,btnViewEvent;
     private ProgressDialog progressDialog;
 
     private Uri imageUri;
@@ -51,6 +52,7 @@ public class AdminEventActivity extends AppCompatActivity {
         etCount = findViewById(R.id.etCount);
         btnSelectImage = findViewById(R.id.btnSelectImage);
         btnAddEvent = findViewById(R.id.btnAddEvent);
+        btnViewEvent = findViewById(R.id.btnViewEvent);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
@@ -65,6 +67,14 @@ public class AdminEventActivity extends AppCompatActivity {
             startActivityForResult(intent, IMAGE_PICK_CODE);
         });
 
+        btnViewEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminEventActivity.this, EventListActivity.class));
+
+            }
+        });
+
         btnAddEvent.setOnClickListener(v -> {
             if (!validateInputs()) return;
             if (imageUri != null) {
@@ -73,6 +83,9 @@ public class AdminEventActivity extends AppCompatActivity {
                 showToast("Please select an image");
             }
         });
+
+
+
     }
 
     private void showDatePicker() {

@@ -63,20 +63,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_marginTop="20dp"
             android:gravity="center"
            >
 
             <Button
                 android:id="@+id/btnAddEvent"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:text="Add Event" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@null"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/view_events" />
+
 
         </LinearLayout>
+
+
     </LinearLayout>
+
+
 </ScrollView>

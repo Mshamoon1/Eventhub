@@ -22,4 +22,8 @@
     <color name="red">#D32F2F</color>
     <color name="deleteRed">#D32F2F</color>
     <color name="dateBadgeBackground">#2196F3</color>
+    <color name="primary">#1976D2</color>
+    <color name="primaryDark">#0D47A1</color>
+    <color name="secondary">#FBC02D</color>
+    <color name="primaryText">#212121</color>
 </resources>
