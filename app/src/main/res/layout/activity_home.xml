@@ -14,6 +14,9 @@
 
 
         <!-- Main Content -->
+
+        <!-- Bottom Navigation -->
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragemntConatinerView"
             android:layout_width="match_parent"
@@ -23,7 +26,6 @@
 
         </androidx.fragment.app.FragmentContainerView>
 
-        <!-- Bottom Navigation -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
@@ -32,8 +34,8 @@
             android:background="@color/primaryDark"
             app:itemIconTint="@color/bottom_nav_selector"
             app:itemTextColor="@color/bottom_nav_selector"
-            app:menu="@menu/bottom_nav_menu"
-            app:labelVisibilityMode="labeled" />
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav_menu" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
