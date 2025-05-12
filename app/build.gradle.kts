@@ -45,7 +45,7 @@ dependencies {
     implementation("com.google.firebase:firebase-database:20.3.0")
     implementation("com.google.firebase:firebase-firestore:24.10.0")
     implementation("com.google.firebase:firebase-storage:20.3.0")
-    implementation("com.cloudinary:cloudinary-android:2.4.0")
+    implementation("com.cloudinary:cloudinary-android:3.0.2")
 
     val mdcVersion = "1.0.0"
 

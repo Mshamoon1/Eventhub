@@ -67,7 +67,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         if (fragment != null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragemntConatinerView, fragment)
+                    .replace(R.id.fragmentContainerView, fragment)
                     .commit();
         }
 
