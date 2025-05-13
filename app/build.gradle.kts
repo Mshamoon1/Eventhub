@@ -37,10 +37,16 @@ android {
     }
 }
 dependencies {
-    implementation(libs.firebase.auth)
     implementation(libs.credentials)
     implementation(libs.credentials.play.services.auth)
     implementation(libs.googleid)
+
+    implementation("com.google.firebase:firebase-auth:22.3.0")
+    implementation("com.google.firebase:firebase-database:20.3.0")
+    implementation("com.google.firebase:firebase-firestore:24.10.0")
+    implementation("com.google.firebase:firebase-storage:20.3.0")
+    implementation("com.cloudinary:cloudinary-android:3.0.2")
+
     val mdcVersion = "1.0.0"
 
     implementation(libs.appcompat)
@@ -53,6 +59,9 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     implementation("com.google.android.material:material:$mdcVersion")
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
+
 }
 
 

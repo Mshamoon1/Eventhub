@@ -16,4 +16,14 @@
     <color name="timeBackgroundGreen">#e8feed</color>
     <color name="greenJoinBtnColor">#00bb5a</color>
     <color name="lightGrey">#D8D8D8</color>
+    <color name="deepGreen">#2E7D32</color>
+    <color name="lightGreen">#C8E6C9</color>
+    <color name="deepGray">#757575</color>
+    <color name="red">#D32F2F</color>
+    <color name="deleteRed">#D32F2F</color>
+    <color name="dateBadgeBackground">#2196F3</color>
+    <color name="primary">#1976D2</color>
+    <color name="primaryDark">#0D47A1</color>
+    <color name="secondary">#FBC02D</color>
+    <color name="primaryText">#212121</color>
 </resources>

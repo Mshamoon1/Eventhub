@@ -3,9 +3,21 @@
     <string name="home_screen">Events</string>
     <string name="Heading">Find amazing events happening around you.</string>
     <string name="Heading_sub_title">Many of the events around you</string>
-    <string name="search_bar_hint">search for an event...</string>
     <string name="location">Lahore ,Karachi, islamabad, peshawar</string>
     <string name="desc">Sunburn Festival is Asia\'s biggest electronic music festival, and this December the festival returns to its homeland – Goa – for three sprawling days of house, EDM and pop on Vagator Beach. Recent lineups have included dance royalty such as Martin Garrix, Afrojack, Dimitri Vegas and Like Mike and many more </string>
-
+    <string name="home_title">Welcome to EventHub</string>
+    <string name="home_subtitle">Discover and manage your events</string>
+    <string name="search_bar_hint">Search events...</string>
+    <string name="nav_header_subtitle">Your Event Planner</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="favorites_screen">Favorites Screen (Under Construction)</string>
+    <string name="profile_screen">Profile Screen (Under Construction)</string>
+    <string name="notifcation">Notifcation</string>
+    <string name="navigation_drawer_open">open drawer\n</string>
+    <string name="navigation_drawer_close">close drawer\n</string>
+    <string name="view_events">View Events</string>
 
 </resources>
